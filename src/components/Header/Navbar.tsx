@@ -1,15 +1,17 @@
+const navItemClasses = "hover:text-gray-400";
+
 export default function Navbar() {
     return (
         <nav>
-            <ul>
+            <ul className="flex space-x-4 list-none">
                 <li>
-                    <a href="/">Home</a>
+                    <a href="/" className={navItemClasses}>Home</a>
                 </li>
                 <li>
-                    <a href="/about">About</a>
+                    <a href="/about" className={navItemClasses}>About</a>
                 </li>
                 <li>
-                    <a href="/contact">Contact</a>
+                    <a href="/contact" className={navItemClasses}>Contact</a>
                 </li>
             </ul>
         </nav>
